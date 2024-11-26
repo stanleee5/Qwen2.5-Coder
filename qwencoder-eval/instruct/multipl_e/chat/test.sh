@@ -9,6 +9,7 @@ MODEL_DIR=${1}
 TP=${2}
 OUTPUT_DIR=${3}
 
+mkdir -p ${OUTPUT_DIR}
 echo "Multiple: ${MODEL_DIR}"
 for lg in ${lgs[@]}; do
     GENERATION_PATH="${OUTPUT_DIR}/generations_${lg}.jsonl"
